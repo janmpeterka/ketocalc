@@ -36,15 +36,13 @@
 
         <!-- Google Material icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
+
         <!-- Bootstrap Social -->
         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-social.css') }}">
 
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-       
         <!-- My style -->
         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
-       
+
         <!-- reCaptcha -->
         <script src='https://www.google.com/recaptcha/api.js?hl=cs'></script>
 
@@ -82,7 +80,7 @@
     {% endblock %}
 
     {% block top %}
-        
+
         {% include('_flashing.html.j2') %}
     {% endblock %}
 
@@ -98,7 +96,7 @@
 
 
     {% if current_user.logged_from_admin %}
-        {% include 'admin/_from_admin.html.j2'%}        
+        {% include 'admin/_from_admin.html.j2'%}
     {% endif %}
 
 
@@ -107,14 +105,12 @@
         {% block content %}{% endblock %}
     </div>
     {% endblock %}
-    
+
     <div class="footer">
         {% block footer %}
             &copy; Copyright since 2017 by <a href="mailto:ketocalc.jmp@gmail.com"> Jan Peterka </a>
         {% endblock %}
     </div>
-    <!-- cookies -->
-    {% include('support/_cookies_consent.html.j2') %}
 </body>
 
 </html>

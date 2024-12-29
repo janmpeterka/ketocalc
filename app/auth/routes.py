@@ -57,7 +57,7 @@ def do_oauth_login(*, user, oauth_type=None):
 
 
 def do_login(username=None, password=None, from_register=False):
-    from flask import Markup
+    from markupsafe import Markup
 
     if not isinstance(password, bytes) and password is not None:
         password = password.encode("utf-8")

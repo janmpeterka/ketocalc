@@ -1,4 +1,4 @@
-from flask import Markup
+from markupsafe import Markup
 
 
 def _link_to_str(text, value, **kwargs):

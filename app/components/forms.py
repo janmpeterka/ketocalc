@@ -1,4 +1,4 @@
-from flask import Markup
+from markupsafe import Markup
 
 
 def option(item, selected=False):

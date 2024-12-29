@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     {% include '_navbar_brand.html.j2' %}
-    
+
     <button class="navbar-toggler" type="button"
             data-toggle="collapse" data-target=".navbar-collapse"
             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,13 +42,8 @@
             <a class="dropdown-item" href="{{ url_for('SupportView:terms') }}"> Podmínky použití </a>
             <a class="dropdown-item" href="{{ url_for('SupportView:privacy') }}"> Osobní data </a>
             <a class="dropdown-item" href="https://github.com/janmpeterka/ketocalc" target="_blank"> {{ icon("github") }} </a>
-            <a class="dropdown-item" href="{{ url_for('SupportView:facebook_redirect') }}" target="_blank" > {{ icon("facebook") }} </a>
           </div>
         </li>
-
-{#         <li class="nav-item mr-4">
-          {% include '_navbar_facebook.html.j2' %}
-        </li> #}
 
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button"
